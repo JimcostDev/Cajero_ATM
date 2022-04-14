@@ -33,6 +33,12 @@ body {
 	margin-bottom: 30px;
 	color: #bbb;
 }
+
+.contenedor .descripcion a{
+	text-decoration: none;
+	color:#f8c10e;
+	cursor: pointer;
+}
 .contenedor .descripcion .bold{
 	color:#f8c10e;
 	font-weight: 400;
