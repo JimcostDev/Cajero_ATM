@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como devuelve dinero un ATM</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1 class="titulo">¿Cómo entrega dinero un cajero automático?</h1>
+      <div class="descripcion">
+        <p>
+          Puede que hayas ido varias veces a un cajero, y a pesar de que le
+          pides la misma cantidad de dinero puede ser que te entregue el monto
+          en diferentes combinaciones de billetes, a veces te entrega todos del
+          mismo valor, a veces diferentes. <span class="bold">¿Cómo sabe el cajero cuál es la
+			combinación de billetes adecuada?</span> 
+        </p>
+		<p>En este ejemplo la cantidad total disponible es de <span class="bold">$1350</span>, repartidos en billetes de:</p>
+		<p><span class="bold">3</span> billetes de <span class="bold">$100</span></p>
+		<p><span class="bold">6</span> billetes de <span class="bold">$50</span></p>
+		<p><span class="bold">10</span> billetes de <span class="bold">$20</span></p>
+		<p><span class="bold">50</span> billetes de <span class="bold">$10</span></p>
+		<p><span class="bold">50</span> billetes de <span class="bold">$1</span></p>
+		
+      </div>
+      <form action="">
+        <input
+          id="valorRetirar"
+          type="number"
+          placeholder="$ Ingresa el monto a retirar:"
+        />
+        <input
+          type="button"
+          class="btn"
+          onclick="getValorRetirar()"
+          value="Aceptar"
+        />
+      </form>
+    </div>
+
+    <script src="cajero.js"></script>
+    <script src="sweetalert.js"></script>
+  </body>
+</html>
